@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "version": "0.0.1",
+  "name": "JC Video Downloader",
+  "description": "A simple extension to download videos",
+
+  "icons": {
+    "16": "./src/assets/logo-16x16.png",
+    "32": "./src/assets/logo-32x32.png",
+    "48": "./src/assets/logo-48x48.png",
+    "128": "./src/assets/logo-128x128.png"
+  },
+
+  "background": {
+    "persistent": true,
+    "scripts": ["src/background.js"]
+  },
+
+  "options_page": "./index.html",
+
+  "browser_action": {
+    "default_popup": "./popup.html",
+    "default_title": "JC Video Downloader"
+  },
+
+  "permissions": ["tabs", "storage", "http://*/", "https://*/"]
+}
