@@ -11,9 +11,26 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-white p-5">
-    <h1>Salve otário!</h1>
-		<br>
-		<button>teste</button>
+  <body class="bg-white p-5 w-96 bg-gray-800">
+    <div class="w-full">
+      <button
+        id="search-button"
+        type="button"
+        class="w-full bg-blue-500 px-3 py-1 text-white mt-2 rounded ml-auto"
+      >
+        Search for videos
+      </button>
+    </div>
+
+    <div class="results w-full flex justify-start mt-3">
+      <div
+        class="not-found text-md text-white w-full flex justify-center hidden"
+      >
+        Not found any video on page!
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="src/popup.js"></script>
   </body>
 </html>
